@@ -1,0 +1,10 @@
+pf_veiculos;
+endereco;
+cliente;
+vendedor;
+veiculo;
+carro;
+caminhao;
+utilitario;
+venda;
+questoes
