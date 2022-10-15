@@ -73,12 +73,12 @@ UTILITARIOS: list[dict[str, str]] = [
 
 VENDAS: list[dict[str, str]] = [
     {
-        'data': '-'.join([str(randint(2000, 2023)), str(randint(1, 13)).zfill(2), str(randint(1, 29)).zfill(2)]),
-        'vendedor_num_vend': randint(1, len(VENDEDORES) + 1),
-        'veiculo_cod_veiculo': randint(1, len(VEICULOS) + 1),
-        'cliente_cpd': choice(CLIENTES)['cpf'],
+        'data': '-'.join([str(randint(2000, 2022)), str(randint(1, 12)).zfill(2), str(randint(1, 28)).zfill(2)]),
+        'vendedor_num_vend': randint(1, len(VENDEDORES)),
+        'veiculo_cod_veiculo': randint(1, len(VEICULOS)),
+        'cliente_cpf': cliente['cpf'],
     }
-    for n_vendas in range(1000)
+    for cliente in CLIENTES
 ]
 
 TABLES: list[dict[str, str]] = [
